@@ -6,15 +6,14 @@ const buildDir = resolve(__dirname, 'dist')
 
 export default defineConfig(() => {
     return {
-
-        root: rootDir,
-        build: {
-            rollupOptions: {
-                input: {
-                    index: resolve(rootDir, 'index.html'),
-                },
-            },
-            outDir: buildDir
-        },
+        root: process.cwd(),
+        // build: {
+        //     rollupOptions: {
+        //         input: {
+        //             index: resolve(rootDir, 'index.html'),
+        //         },
+        //     },
+        //     outDir: buildDir
+        // },
     }
 })
